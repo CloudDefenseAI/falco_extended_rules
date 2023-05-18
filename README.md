@@ -1,6 +1,21 @@
 ## Falco rules hosted by CloudDefenseAI
-Curating Falco rules with MITRE ATT&amp;CK Matrix
-https://attack.mitre.org/matrices/enterprise/cloud/
+-- Curating Falco rules with MITRE ATT&amp;CK Matrix
+https://attack.mitre.org/matrices/enterprise/cloud/ .
+
+
+This repository contains a collection of extended [Falco](https://falco.org/) rules developed by CloudDefense.ai for internal use.
+
+Falco is a powerful open-source behavioral activity monitor designed to detect and alert on unexpected application behavior in containers and Kubernetes. These extended rules provided by CloudDefense.ai enhance the default rule set and offer additional detection capabilities to strengthen the security of your containerized environment.
+
+The extended Falco rules included in this repository are carefully crafted and continuously updated by the experienced security experts at CloudDefense.ai. They address a wide range of potential security threats and anomalies, enabling you to identify suspicious activities, unauthorized access attempts, privilege escalations, and other malicious behaviors.
+
+By leveraging these extended Falco rules, you can enhance your security posture, proactively monitor your containerized environment, and respond swiftly to any potential security incidents. Additionally, you have the flexibility to customize and fine-tune the rules according to your specific requirements and environment.
+
+We encourage you to explore the rules, understand their capabilities, and integrate them into your existing Falco deployment. Feel free to contribute, provide feedback, or suggest improvements to help us enhance the rule set further.
+
+Please note that these extended Falco rules are provided for informational purposes and internal use. While they are designed to be effective, they may require adjustment and fine-tuning to suit your specific environment and threat landscape. We recommend testing and validating these rules in a controlled environment before deploying them in production.
+
+Thank you for your interest in the extended Falco rules by CloudDefense.ai. We hope this repository helps bolster the security of your containerized infrastructure.
 
 
 Below table shows the list of hosted rules in this repository: 
