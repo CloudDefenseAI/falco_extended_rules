@@ -1,6 +1,7 @@
-### Falco rules by https://www.clouddefense.ai/
+### Falco rules 
 Curating Falco rules with MITRE ATT&amp;CK Matrix
 https://attack.mitre.org/matrices/enterprise/cloud/
+
 
 
 
@@ -28,6 +29,12 @@ https://attack.mitre.org/matrices/enterprise/cloud/
 |Modify Authentication Process|To detetct any modifications done in asystems uthentication process|Mitre Credential Access|
 |Process Injection|To detect any new process is embedded in to systems present process|Mitre Priviledge Escalation|
 |Password policy discovery|To detect any discovery about set password policies of a system||
+
+
+
+
+### Contributing
+If you want to help and wish to contribute, please review our contribution guidelines. Code contributions are always encouraged and welcome!
 
 ### Disclaimer:
 
