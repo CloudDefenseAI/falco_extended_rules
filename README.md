@@ -1,9 +1,9 @@
-### Falco rules 
+## Falco rules 
 Curating Falco rules with MITRE ATT&amp;CK Matrix
 https://attack.mitre.org/matrices/enterprise/cloud/
 
 
-
+Below table shows the list of hosted rules in this repository: 
 
 
 
@@ -33,10 +33,10 @@ https://attack.mitre.org/matrices/enterprise/cloud/
 
 
 
-### Contributing
+## Contributing
 If you want to help and wish to contribute, please review our contribution guidelines. Code contributions are always encouraged and welcome!
 
-### Disclaimer:
+## Disclaimer:
 
 The content and code available in this GitHub repository are currently a work in progress. Please note that the rules, guidelines, or any other materials provided here are subject to change without prior notice.
 While we aim to ensure the accuracy and completeness of the information presented, there may be errors or omissions. We kindly request users to exercise caution and critical judgment when utilizing or relying on any content found in this repository.
