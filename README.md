@@ -2,6 +2,10 @@
 Curating Falco rules with MITRE ATT&amp;CK Matrix
 https://attack.mitre.org/matrices/enterprise/cloud/
 
+
+
+
+
 | Rule Name | Purpose | Corresponding Mitre |
 | -------- | -------- | -------- |
 |Account manipulation in ssh| account manipulation |Mitre Persistance|
@@ -24,4 +28,10 @@ https://attack.mitre.org/matrices/enterprise/cloud/
 |Modify Authentication Process|To detetct any modifications done in asystems uthentication process|Mitre Credential Access|
 |Process Injection|To detect any new process is embedded in to systems present process|Mitre Priviledge Escalation|
 |Password policy discovery|To detect any discovery about set password policies of a system||
+
+### Disclaimer:
+
+The content and code available in this GitHub repository are currently a work in progress. Please note that the rules, guidelines, or any other materials provided here are subject to change without prior notice.
+While we aim to ensure the accuracy and completeness of the information presented, there may be errors or omissions. We kindly request users to exercise caution and critical judgment when utilizing or relying on any content found in this repository.
+We appreciate your understanding and patience as we continue to develop and refine the content within this repository. Contributions, feedback, and suggestions are welcome and greatly valued, as they contribute to the ongoing improvement of this project.
 
