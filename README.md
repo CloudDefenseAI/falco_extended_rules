@@ -3,7 +3,7 @@
 https://attack.mitre.org/matrices/enterprise/cloud/ .
 
 
-This repository contains a collection of extended [Falco](https://falco.org/) rules developed by CloudDefense.ai for internal use.
+This repository contains a collection of extended [Falco](https://falco.org/) rules developed by CloudDefense.ai.
 
 Falco is a powerful open-source behavioral activity monitor designed to detect and alert on unexpected application behavior in containers and Kubernetes. These extended rules provided by CloudDefense.ai enhance the default rule set and offer additional detection capabilities to strengthen the security of your containerized environment.
 
