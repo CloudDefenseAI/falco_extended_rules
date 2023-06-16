@@ -2,27 +2,49 @@
 ![CD-Logo](https://github.com/CloudDefenseAI/falco_extended_rules/assets/28846178/58bd666b-7a99-453e-a777-4a41bf789153)
 
 ## Falco rules hosted by CloudDefenseAI
--- Curating Falco rules with MITRE ATT&amp;CK Matrix
 https://attack.mitre.org/matrices/enterprise/cloud/ .
 
 This repository contains a collection of extended [Falco](https://falco.org/) rules developed by CloudDefense.ai.
 
 Falco is a powerful open-source behavioral activity monitor designed to detect and alert on unexpected application behavior in containers and Kubernetes. These extended rules provided by CloudDefense.ai enhance the default rule set and offer additional detection capabilities to strengthen the security of your containerized environment.
 
-The extended Falco rules included in this repository are carefully crafted and continuously updated by the experienced security experts at CloudDefense.ai. They address a wide range of potential security threats and anomalies, enabling you to identify suspicious activities, unauthorized access attempts, privilege escalations, and other malicious behaviors.
 
-By leveraging these extended Falco rules, you can enhance your security posture, proactively monitor your containerized environment, and respond swiftly to any potential security incidents. Additionally, you have the flexibility to customize and fine-tune the rules according to your specific requirements and environment.
+## Prerequisites
+Before you begin, make sure you have the following prerequisites in place:
 
-We encourage you to explore the rules, understand their capabilities, and integrate them into your existing Falco deployment. Feel free to contribute, provide feedback, or suggest improvements to help us enhance the rule set further.
+1. Falco Installed: Ensure that you have Falco installed on the target system where you want to enable runtime security. Refer to the official [Falco documentation](https://falco.org/docs/) for installation instructions.
 
-Please note that these extended Falco rules are provided for informational purposes and internal use. While they are designed to be effective, they may require adjustment and fine-tuning to suit your specific environment and threat landscape. We recommend testing and validating these rules in a controlled environment before deploying them in production.
+2. Falco Configuration: Set up your Falco configuration file (falco.yaml) according to your specific needs. Make sure you have configured Falco to load external rule files.
 
-Thank you for your interest in the extended Falco rules by CloudDefense.ai. We hope this repository helps bolster the security of your containerized infrastructure.
+## Installation
+To install and use the extended rule set for Falco runtime security, follow these steps:
 
+1. Clone the Repository: Start by cloning this GitHub repository to your local system: 
+```
+git clone https://github.com/CloudDefenseAI/falco_extended_rules.git
+```
+2. Navigate to the Repository: Change to the repository directory:
+```
+cd falco_extended_rules
+```
+3. Add Rules: Copy the extended rule files (custom_rules.yaml) from the cloned repository to a location accessible by Falco. For example, you can place them in the same directory as your Falco configuration file or in a separate directory, depending on your preference.
+4. Update Falco Configuration: Open your Falco configuration file (falco.yaml) and add the following lines under the rules_file section:
+```
+   rules_file:
+   -/path/to/your/rules/file1.yaml
+   -/path/to/your/rules/file2.yaml
+```
+5. Restart Falco: Restart the Falco service to apply the changes and load the new rules.
+```
+# Restart Falco on systemd-based systems
+sudo systemctl restart falco
 
-Below table shows the list of hosted rules in this repository: 
+# Restart Falco on non-systemd systems
+sudo service falco restart
+```   
+##
 
-
+### Below table shows the list of hosted rules in this repository: 
 
 | Rule Name | Purpose | Corresponding Mitre |
 | -------- | -------- | -------- |
@@ -47,7 +69,9 @@ Below table shows the list of hosted rules in this repository:
 |Process Injection|To detect any new process is embedded in to systems present process|Mitre Priviledge Escalation|
 |Password policy discovery|To detect any discovery about set password policies of a system||
 
+The extended Falco rules included in this repository are carefully crafted and continuously updated by the experienced security experts at CloudDefense.ai. They address a wide range of potential security threats and anomalies, enabling you to identify suspicious activities, unauthorized access attempts, privilege escalations, and other malicious behaviors.
 
+By leveraging these extended Falco rules, you can enhance your security posture, proactively monitor your containerized environment, and respond swiftly to any potential security incidents. Additionally, you have the flexibility to customize and fine-tune the rules according to your specific requirements and environment.
 
 
 ## Contributing
