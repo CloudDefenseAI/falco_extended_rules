@@ -73,10 +73,12 @@ The extended Falco rules included in this repository are carefully crafted and c
 
 By leveraging these extended Falco rules, you can enhance your security posture, proactively monitor your containerized environment, and respond swiftly to any potential security incidents. Additionally, you have the flexibility to customize and fine-tune the rules according to your specific requirements and environment.
 
-
+## Testing the Rules 
+To ensure that the extended rules are functioning correctly, you can perform some test scenarios in your runtime environment. These can include simulating potential security events or actions that the rules are designed to detect. Monitor the Falco output, logs, or any configured alerting mechanism to observe the detection and response to these test scenarios.
 ## Contributing
 If you want to help and wish to contribute, please review our contribution guidelines. Code contributions are always encouraged and welcome!
-
+## License
+This extended rule set for Falco runtime security is released under the [Apache-2.0 License](url).
 ## Disclaimer:
 
 The content and code available in this GitHub repository are currently a work in progress. Please note that the rules, guidelines, or any other materials provided here are subject to change without prior notice.
