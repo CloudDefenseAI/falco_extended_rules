@@ -3,6 +3,7 @@
 
 ## Falco rules hosted by CloudDefenseAI
 https://attack.mitre.org/matrices/enterprise/cloud/ .
+![MITRE_ATTACK_Updated](https://github.com/CloudDefenseAI/falco_extended_rules/assets/28846178/4c5147a1-647e-401e-99b5-5c00b36a15cc)
 
 This repository contains a collection of extended [Falco](https://falco.org/) rules developed by CloudDefense.ai.
 
