@@ -94,3 +94,7 @@ The content and code available in this GitHub repository are currently a work in
 While we aim to ensure the accuracy and completeness of the information presented, there may be errors or omissions. We kindly request users to exercise caution and critical judgment when utilizing or relying on any content found in this repository.
 We appreciate your understanding and patience as we continue to develop and refine the content within this repository. Contributions, feedback, and suggestions are welcome and greatly valued, as they contribute to the ongoing improvement of this project.
 
+## Who Uses Extended rules?
+If your organization uses these rules, please file a PR and update this list. Say hi on Discord too!
+
+
