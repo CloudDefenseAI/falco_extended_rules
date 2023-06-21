@@ -9,7 +9,8 @@ Falco is a powerful open-source behavioral activity monitor designed to detect a
 
 The image below shows the mitre attack coverage by Falco & extended coverage added by [Clouddefense.ai](https://www.clouddefense.ai/)
 
-![MITRE_ATTACK_Updated](https://github.com/CloudDefenseAI/falco_extended_rules/assets/28846178/4c5147a1-647e-401e-99b5-5c00b36a15cc)
+
+![kkkk](https://github.com/CloudDefenseAI/falco_extended_rules/assets/28846178/0f490715-8d74-4950-8b2b-5baf54d870db)
 
 
 
