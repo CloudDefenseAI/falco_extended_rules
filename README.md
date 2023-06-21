@@ -53,25 +53,27 @@ sudo service falco restart
 | S. No | Rule Name | Purpose | Corresponding Mitre |
 | -------- | -------- | -------- | -------- |
 |1|Account manipulation in ssh| account manipulation |Mitre Persistance|
-|2|Suspicious Network Scanning Command|remote system discovery|Mitre Discovery|
-|3|Suspicious Time and Date Command Execution|date,time and region discovery|Mitre Dscovery|
-|4 |Archive and Compression Activity|Archive Collected data|Mitre Collection|
-|5|Detect peripheral device enumeration commands|Peripheral device discovery|Mitre Discovery|
-|6|Detect service disable using systemctl|service stop|Mitre Impact|
-|7|Chown or Chmod Operation|file and directory permission modification|Mitre Defense Evasion|
-|8|Detect data destruction activity|Data destruction for impact|Mitre Impact|
-|9|Read maps file of process|os credential dumping|Mitre Credential access|
-|10|attempt to access bash history|unsecured credential access|Mitre Credential access|
-|11|permission and group members discovery|permissions groups discovery|Mitre Discovery|
-|12|system service discovery|To discover all services on a system|Mitre Discovery|
-|13|boot or logon autostart execution|to detect if a script is embedded to execute on boot or logon|Mitre Persistance|
-|14|Create accout or add user|to add a user to get persistance access of a system|Mitre Persistance|
-|15|Create or Modify system process|to detect modified system process|Mitre Persistance|
-|16|Create a system process which will execute a script |To detect creation of any malicious system service|Mitre Persistance|
-|17|Credntials from password file|To detect reading sensitive password files present on system|Mitre Credential Access|
-|18|Modify Authentication Process|To detetct any modifications done in asystems uthentication process|Mitre Credential Access|
-|19|Process Injection|To detect any new process is embedded in to systems present process|Mitre Priviledge Escalation|
-|20|Password policy discovery|To detect any discovery about set password policies of a system||
+|2|Suspicious disk activity|Detects disk wiping, overwriting or corrupting raw disk data|Mitre Impact|
+|3|Disable Recovery Features|Dtects disabling of system recovery features|Mitre Impact|
+|4|Detect Data Destruction Activity|Detects activity related to data destruction|Mitre Imapct|
+|5|Suspicious Network Scanning Command|Detects suspicious network scanning commands|Mitre Discovery|
+|6|Permission and Group Members Discovery|Detects permission of files and group and its group members|Mitre Discovery|
+|7|Detect Peripheral Device Enumeration Commands|Detects if someone runs commands that enumerate peripheral devices|Mitre Discovery|
+|8|Suspicious Time and Date Command Execution|Detects the execution of commands that may be used to gather time, date, and region information|Mitre Discovery|
+|9|Enumerate Domain Trusts|Detects attempts to enumerate domain trusts in Linux systems|Mitre Discovery|
+|10|Detect System Location Information Retrieval|Detects attempts to retrieve system information|Mitre Discovery|
+|11|Get Information About Open Application Windows|Detects attempts to get information about open application windows|Mitre Discovery|
+|12|Suspicious System Information Gathering|Detects suspicious commands related to gathering system information|Mitre Discovery|
+|13|Read Maps File of Process|An attempt to read the maps file of a process will be detected|Mitre Credential Access|
+|14|Attempt to Access Bash History File|Someone is attempting to access the bash history file|Mitre Credential Access|
+|15| Chown or Chmod Operation|Detects chown or chmod operations|Mitre Defense Evasion|
+|16|Execute Command Via Utility|Detects execution of commands via parse text, scripting languages, and system utilities|Mitre Defense Evasion|
+|17|Read Disk Block Command|Detects execution of commands that read disk blocks|Mitre Defense Evasion|
+|18|Archive and Compression Activity|Detects archive and compression activity using tar, zip, gzip, and bzip2|Mitre Collection|
+|19|Detect Service Disable Using Systemctl|Detect Service Disable Using Systemctl|Mitre Impact|
+|20|System Service Discovery|an attempt to discover all services that are running in system|Mitre Discovery|
+
+
 
 The extended Falco rules included in this repository are carefully crafted and continuously updated by the experienced security experts at CloudDefense.ai. They address a wide range of potential security threats and anomalies, enabling you to identify suspicious activities, unauthorized access attempts, privilege escalations, and other malicious behaviors.
 
